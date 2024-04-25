@@ -1,14 +1,14 @@
 from typing import List
 
 from f4e_radwaste.constants import (
-    KEY_RADWASTE_CLASS,
-    get_radwaste_class_str_from_int,
-    KEY_MASS_GRAMS,
+    KEY_CDR,
+    KEY_DOSE_1_METER,
     KEY_IRAS,
+    KEY_MASS_GRAMS,
+    KEY_RADWASTE_CLASS,
     KEY_RELEVANT_SPECIFIC_ACTIVITY,
     KEY_TOTAL_SPECIFIC_ACTIVITY,
-    KEY_DOSE_1_METER,
-    KEY_CDR,
+    get_radwaste_class_str_from_int,
 )
 from f4e_radwaste.data_formats.data_isotope_criteria import DataIsotopeCriteria
 from f4e_radwaste.data_formats.data_mesh_activity import DataMeshActivity

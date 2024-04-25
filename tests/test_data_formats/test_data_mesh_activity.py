@@ -4,7 +4,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from f4e_radwaste.constants import KEY_VOXEL, KEY_MASS_GRAMS
+from f4e_radwaste.constants import KEY_MASS_GRAMS, KEY_VOXEL
 from f4e_radwaste.data_formats.data_mesh_activity import DataMeshActivity
 
 

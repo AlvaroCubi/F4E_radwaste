@@ -1,7 +1,7 @@
 # pylint: disable=E1101
 from pathlib import Path
 
-from qtpy import QtWidgets, QtCore
+from qtpy import QtCore, QtWidgets
 
 from f4e_radwaste.data_formats.data_mesh_activity import DataMeshActivity
 from f4e_radwaste.gui.widgets.scientific_float_spinner_widget import (

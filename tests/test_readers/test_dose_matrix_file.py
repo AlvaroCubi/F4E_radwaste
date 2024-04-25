@@ -5,9 +5,9 @@ from unittest.mock import patch
 import pandas as pd
 
 from f4e_radwaste.readers.dose_matrix_file import (
-    read_dose_1_m_factors,
-    read_contact_dose_rate_factors,
     GEOMETRIC_FACTOR_1_M,
+    read_contact_dose_rate_factors,
+    read_dose_1_m_factors,
 )
 
 EXAMPLE_FILE = """Absorbed doses from kerma-in-air...,,,,

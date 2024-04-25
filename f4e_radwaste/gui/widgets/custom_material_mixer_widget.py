@@ -1,7 +1,7 @@
 # Thanks to the writer of the tutorial this file is based on: John Lim
 # Link to tutorial: https://www.pythonguis.com/tutorials/pyqt6-widget-search-bar/
 
-from qtpy import QtWidgets, QtCore
+from qtpy import QtCore, QtWidgets
 
 
 class CustomMaterialMixer(QtWidgets.QWidget):

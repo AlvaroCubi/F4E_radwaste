@@ -8,8 +8,8 @@ from f4e_radwaste.post_processing.calculate_dose_rates import DoseCalculator
 from f4e_radwaste.post_processing.input_data import InputData
 from f4e_radwaste.readers import isotope_criteria_file
 from f4e_radwaste.readers.dose_matrix_file import (
-    read_dose_1_m_factors,
     read_contact_dose_rate_factors,
+    read_dose_1_m_factors,
 )
 
 

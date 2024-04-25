@@ -1,5 +1,6 @@
 from pathlib import Path
 from typing import Optional
+
 import pyvista as pv
 
 from f4e_radwaste.gui.gui_functions import GUIFunctions

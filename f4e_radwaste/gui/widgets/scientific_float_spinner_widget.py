@@ -1,5 +1,5 @@
 import numpy as np
-from qtpy import QtWidgets, QtGui
+from qtpy import QtGui, QtWidgets
 
 
 class QScientificFloatSpinner(QtWidgets.QDoubleSpinBox):

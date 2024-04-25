@@ -3,7 +3,7 @@ import unittest
 import numpy as np
 import pandas as pd
 
-from f4e_radwaste.constants import KEY_VOXEL, KEY_MATERIAL, KEY_CELL, KEY_MASS_GRAMS
+from f4e_radwaste.constants import KEY_CELL, KEY_MASS_GRAMS, KEY_MATERIAL, KEY_VOXEL
 from f4e_radwaste.data_formats.data_mass import DataMass
 
 

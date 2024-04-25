@@ -4,11 +4,11 @@ import numpy as np
 import pandas as pd
 
 from f4e_radwaste.constants import (
-    CoordinateType,
-    KEY_VOXEL,
-    KEY_MATERIAL,
     KEY_CELL,
     KEY_MASS_GRAMS,
+    KEY_MATERIAL,
+    KEY_VOXEL,
+    CoordinateType,
 )
 from f4e_radwaste.data_formats.data_mass import DataMass
 from f4e_radwaste.data_formats.data_mesh_info import DataMeshInfo

@@ -1,12 +1,13 @@
-import pandas as pd
 import re
 
+import pandas as pd
+
 from f4e_radwaste.constants import (
-    KEY_TIME,
-    KEY_VOXEL,
+    KEY_ABSOLUTE_ACTIVITY,
     KEY_CELL,
     KEY_ISOTOPE,
-    KEY_ABSOLUTE_ACTIVITY,
+    KEY_TIME,
+    KEY_VOXEL,
 )
 from f4e_radwaste.data_formats.data_absolute_activity import DataAbsoluteActivity
 

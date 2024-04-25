@@ -3,13 +3,13 @@ from typing import List, Optional
 import pandas as pd
 
 from f4e_radwaste.constants import (
-    KEY_ISOTOPE,
-    KEY_TFA_DECLARATION,
-    KEY_TFA_CLASS,
-    KEY_LMA,
     KEY_CSA_DECLARATION,
     KEY_HALF_LIFE,
+    KEY_ISOTOPE,
     KEY_LDF_DECLARATION,
+    KEY_LMA,
+    KEY_TFA_CLASS,
+    KEY_TFA_DECLARATION,
 )
 from f4e_radwaste.data_formats.dataframe_validator import DataFrameValidator
 

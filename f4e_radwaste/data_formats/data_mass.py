@@ -1,9 +1,9 @@
-from typing import Optional, List, Tuple
+from typing import List, Optional, Tuple
 
 import numpy as np
 import pandas as pd
 
-from f4e_radwaste.constants import KEY_MASS_GRAMS, KEY_CELL, KEY_MATERIAL, KEY_VOXEL
+from f4e_radwaste.constants import KEY_CELL, KEY_MASS_GRAMS, KEY_MATERIAL, KEY_VOXEL
 from f4e_radwaste.data_formats.dataframe_validator import DataFrameValidator
 
 

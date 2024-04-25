@@ -2,9 +2,9 @@ from pathlib import Path
 from typing import Type
 
 from f4e_radwaste.post_processing.post_processing import (
-    StandardProcessor,
     ByComponentProcessor,
     FilteredProcessor,
+    StandardProcessor,
 )
 
 

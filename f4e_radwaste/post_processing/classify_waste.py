@@ -1,14 +1,14 @@
 import pandas as pd
 
 from f4e_radwaste.constants import (
-    TYPE_TFA_INT,
-    TYPE_A_INT,
-    TYPE_B_INT,
-    KEY_RADWASTE_CLASS,
     KEY_IRAS,
     KEY_LMA,
-    KEY_TOTAL_SPECIFIC_ACTIVITY,
+    KEY_RADWASTE_CLASS,
     KEY_RELEVANT_SPECIFIC_ACTIVITY,
+    KEY_TOTAL_SPECIFIC_ACTIVITY,
+    TYPE_A_INT,
+    TYPE_B_INT,
+    TYPE_TFA_INT,
 )
 from f4e_radwaste.data_formats.data_isotope_criteria import DataIsotopeCriteria
 from f4e_radwaste.data_formats.data_mesh_activity import DataMeshActivity

@@ -3,27 +3,27 @@ import shutil
 from pathlib import Path
 
 from f4e_radwaste.constants import (
-    FOLDER_NAME_DATA_TABLES,
-    FOLDER_NAME_CSV,
-    FOLDER_NAME_VTK,
     FILENAME_DGS_DATA,
     FILENAME_MESHINFO,
+    FOLDER_NAME_CSV,
+    FOLDER_NAME_DATA_TABLES,
+    FOLDER_NAME_VTK,
 )
 from f4e_radwaste.post_processing.calculate_dose_rates import DoseCalculator
 from f4e_radwaste.post_processing.components_info import ComponentsInfo
 from f4e_radwaste.post_processing.folder_paths import FolderPaths
 from f4e_radwaste.post_processing.input_data import InputData
 from f4e_radwaste.readers import (
-    filter_cells_file,
     dgs_file,
-    mesh_info_file,
+    filter_cells_file,
     isotope_criteria_file,
+    mesh_info_file,
 )
 from f4e_radwaste.readers.aux_material_file import read_element_mixes_of_materials
 from f4e_radwaste.readers.component_ids_file import get_component_ids_from_folder
 from f4e_radwaste.readers.dose_matrix_file import (
-    read_dose_1_m_factors,
     read_contact_dose_rate_factors,
+    read_dose_1_m_factors,
 )
 
 

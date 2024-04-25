@@ -1,5 +1,5 @@
 from f4e_radwaste.gui.gui_helpers import select_folder_through_dialog
-from f4e_radwaste.main import standard_process, by_component_process, filtered_process
+from f4e_radwaste.main import by_component_process, filtered_process, standard_process
 
 
 def gui_standard_process():

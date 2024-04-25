@@ -5,9 +5,9 @@ from pyvistaqt import MainWindow, QtInteractor
 from qtpy import QtWidgets
 
 from f4e_radwaste.gui.gui_processing import (
-    gui_standard_process,
-    gui_filtered_process,
     gui_by_component_process,
+    gui_filtered_process,
+    gui_standard_process,
 )
 from f4e_radwaste.gui.widgets.overlaid_box_widget import OverlaidBoxWidget
 from f4e_radwaste.gui.widgets.results_widget import ResultsWidget

@@ -9,19 +9,19 @@ import numpy as np
 import pandas as pd
 
 from f4e_radwaste.constants import (
-    KEY_TIME,
-    KEY_VOXEL,
-    KEY_CELL,
-    KEY_ISOTOPE,
     KEY_ABSOLUTE_ACTIVITY,
-    KEY_MASS_GRAMS,
-    KEY_MATERIAL,
-    KEY_LDF_DECLARATION,
-    KEY_TFA_DECLARATION,
-    KEY_TFA_CLASS,
-    KEY_LMA,
+    KEY_CELL,
     KEY_CSA_DECLARATION,
     KEY_HALF_LIFE,
+    KEY_ISOTOPE,
+    KEY_LDF_DECLARATION,
+    KEY_LMA,
+    KEY_MASS_GRAMS,
+    KEY_MATERIAL,
+    KEY_TFA_CLASS,
+    KEY_TFA_DECLARATION,
+    KEY_TIME,
+    KEY_VOXEL,
     CoordinateType,
 )
 from f4e_radwaste.data_formats.data_absolute_activity import DataAbsoluteActivity
@@ -35,11 +35,11 @@ from f4e_radwaste.post_processing.input_data import (
     InputData,
 )
 from f4e_radwaste.post_processing.post_processing import (
-    create_folder_paths,
-    load_input_data_from_folder,
-    StandardProcessor,
     ByComponentProcessor,
     FilteredProcessor,
+    StandardProcessor,
+    create_folder_paths,
+    load_input_data_from_folder,
 )
 
 

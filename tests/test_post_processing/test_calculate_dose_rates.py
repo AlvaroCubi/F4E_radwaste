@@ -2,7 +2,7 @@ import unittest
 
 import pandas as pd
 
-from f4e_radwaste.constants import KEY_VOXEL, KEY_MASS_GRAMS, KEY_DOSE_1_METER, KEY_CDR
+from f4e_radwaste.constants import KEY_CDR, KEY_DOSE_1_METER, KEY_MASS_GRAMS, KEY_VOXEL
 from f4e_radwaste.data_formats.data_mesh_activity import DataMeshActivity
 from f4e_radwaste.post_processing.calculate_dose_rates import DoseCalculator
 

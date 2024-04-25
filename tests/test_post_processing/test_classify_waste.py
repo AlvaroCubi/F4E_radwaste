@@ -3,27 +3,27 @@ import unittest
 import numpy as np
 import pandas as pd
 
-from f4e_radwaste.post_processing.classify_waste import classify_waste
 from f4e_radwaste.constants import (
-    KEY_ISOTOPE,
-    KEY_HALF_LIFE,
     KEY_CSA_DECLARATION,
+    KEY_HALF_LIFE,
+    KEY_IRAS,
+    KEY_ISOTOPE,
+    KEY_LDF_DECLARATION,
     KEY_LMA,
+    KEY_MASS_GRAMS,
+    KEY_RADWASTE_CLASS,
+    KEY_RELEVANT_SPECIFIC_ACTIVITY,
     KEY_TFA_CLASS,
     KEY_TFA_DECLARATION,
-    KEY_LDF_DECLARATION,
-    KEY_VOXEL,
-    KEY_MASS_GRAMS,
     KEY_TOTAL_SPECIFIC_ACTIVITY,
-    KEY_RELEVANT_SPECIFIC_ACTIVITY,
-    KEY_IRAS,
-    KEY_RADWASTE_CLASS,
-    TYPE_TFA_INT,
+    KEY_VOXEL,
     TYPE_A_INT,
     TYPE_B_INT,
+    TYPE_TFA_INT,
 )
 from f4e_radwaste.data_formats.data_isotope_criteria import DataIsotopeCriteria
 from f4e_radwaste.data_formats.data_mesh_activity import DataMeshActivity
+from f4e_radwaste.post_processing.classify_waste import classify_waste
 
 
 class ClassifyWasteTests(unittest.TestCase):

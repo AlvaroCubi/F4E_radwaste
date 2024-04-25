@@ -1,9 +1,9 @@
 from pathlib import Path
-from typing import Optional, List, Dict
+from typing import Dict, List, Optional
 
 import pandas as pd
 
-from f4e_radwaste.constants import KEY_VOXEL, KEY_MASS_GRAMS
+from f4e_radwaste.constants import KEY_MASS_GRAMS, KEY_VOXEL
 from f4e_radwaste.data_formats.dataframe_validator import DataFrameValidator
 
 

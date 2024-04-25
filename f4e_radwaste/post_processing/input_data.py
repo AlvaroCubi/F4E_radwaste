@@ -1,13 +1,13 @@
 from dataclasses import dataclass
-from typing import Optional, List
+from typing import List, Optional
 
 import pandas as pd
 
 from f4e_radwaste.constants import (
     KEY_ABSOLUTE_ACTIVITY,
-    KEY_VOXEL,
     KEY_ISOTOPE,
     KEY_MASS_GRAMS,
+    KEY_VOXEL,
 )
 from f4e_radwaste.data_formats.data_absolute_activity import DataAbsoluteActivity
 from f4e_radwaste.data_formats.data_isotope_criteria import DataIsotopeCriteria

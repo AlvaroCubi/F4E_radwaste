@@ -8,25 +8,23 @@ import numpy as np
 from f4e_radwaste.data_formats.data_mesh_activity import DataMeshActivity
 from f4e_radwaste.post_processing.classify_waste import classify_waste
 
-
 if TYPE_CHECKING:
     from f4e_radwaste.gui.gui_manager import GUIManager
 
 import pyvista as pv
 
 from f4e_radwaste.gui.gui_helpers import (
+    COLOR_MAP,
+    DATA_MESH_PLOTTER_NAME,
     KEY_ALL_MATERIALS,
     KEY_CUSTOM_MATERIAL,
-    DATA_MESH_PLOTTER_NAME,
-    COLOR_MAP,
-    SCALAR_BAR_ARGS,
+    KEY_R2S_INDICES,
     NUMBER_OF_COLORS,
     OVERLAID_BOX_MESH_PLOTTER_NAME,
-    KEY_R2S_INDICES,
-    select_stl_through_dialog,
+    SCALAR_BAR_ARGS,
     select_folder_through_dialog,
+    select_stl_through_dialog,
 )
-
 from f4e_radwaste.meshgrids import create_grid
 
 

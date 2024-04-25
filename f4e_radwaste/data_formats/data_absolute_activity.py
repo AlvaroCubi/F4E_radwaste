@@ -1,14 +1,14 @@
-from typing import Optional, List
+from typing import List, Optional
 
 import numpy as np
 import pandas as pd
 
 from f4e_radwaste.constants import (
-    KEY_TIME,
-    KEY_VOXEL,
+    KEY_ABSOLUTE_ACTIVITY,
     KEY_CELL,
     KEY_ISOTOPE,
-    KEY_ABSOLUTE_ACTIVITY,
+    KEY_TIME,
+    KEY_VOXEL,
 )
 from f4e_radwaste.data_formats.dataframe_validator import DataFrameValidator
 

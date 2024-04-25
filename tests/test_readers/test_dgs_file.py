@@ -1,19 +1,18 @@
 import unittest
+from io import StringIO
+from unittest.mock import patch
 
 import pandas as pd
 
 from f4e_radwaste.constants import (
-    KEY_TIME,
-    KEY_VOXEL,
+    KEY_ABSOLUTE_ACTIVITY,
     KEY_CELL,
     KEY_ISOTOPE,
-    KEY_ABSOLUTE_ACTIVITY,
+    KEY_TIME,
+    KEY_VOXEL,
 )
 from f4e_radwaste.data_formats.data_absolute_activity import DataAbsoluteActivity
-from f4e_radwaste.readers.dgs_file import read_file, fix_isotope_names
-
-from io import StringIO
-from unittest.mock import patch
+from f4e_radwaste.readers.dgs_file import fix_isotope_names, read_file
 
 EXAMPLE_DGS_FILE = """ Photon Isotope
 Number of decay times:         2

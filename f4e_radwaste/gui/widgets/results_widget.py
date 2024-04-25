@@ -1,18 +1,17 @@
 # pylint: disable=E1101
 import dataclasses
 
-from qtpy import QtWidgets, QtCore
+from qtpy import QtCore, QtWidgets
 
 from f4e_radwaste.constants import KEY_TOTAL_SPECIFIC_ACTIVITY, TYPE_B_STR
 from f4e_radwaste.data_formats.data_isotope_criteria import DataIsotopeCriteria
 from f4e_radwaste.data_formats.data_mesh_activity import DataMeshActivity
-
 from f4e_radwaste.gui.gui_helpers import (
-    add_combo_box,
-    add_check_push_button,
-    add_check_box,
     KEY_ALL_MATERIALS,
     KEY_CUSTOM_MATERIAL,
+    add_check_box,
+    add_check_push_button,
+    add_combo_box,
     add_input_float_scientific_spinner,
 )
 from f4e_radwaste.gui.widgets.custom_material_mixer_widget import (

@@ -5,8 +5,8 @@ from typing import Dict, List
 import pandas as pd
 
 from f4e_radwaste.constants import (
-    KEY_DOSE_1_METER,
     KEY_CDR,
+    KEY_DOSE_1_METER,
 )
 from f4e_radwaste.data_formats.data_mesh_activity import DataMeshActivity
 

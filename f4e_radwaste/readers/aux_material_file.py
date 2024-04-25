@@ -1,8 +1,9 @@
-from pathlib import Path
-from typing import Dict, TextIO, List
 import re
-import periodictable as pt
+from pathlib import Path
+from typing import Dict, List, TextIO
+
 import pandas as pd
+import periodictable as pt
 
 FILENAME = "auxUMdata.inp"
 

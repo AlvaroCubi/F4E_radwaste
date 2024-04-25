@@ -4,13 +4,13 @@ from pathlib import Path
 import pandas as pd
 
 from f4e_radwaste.constants import (
-    KEY_ISOTOPE,
-    KEY_HALF_LIFE,
     KEY_CSA_DECLARATION,
+    KEY_HALF_LIFE,
+    KEY_ISOTOPE,
+    KEY_LDF_DECLARATION,
     KEY_LMA,
     KEY_TFA_CLASS,
     KEY_TFA_DECLARATION,
-    KEY_LDF_DECLARATION,
 )
 from f4e_radwaste.data_formats.data_isotope_criteria import DataIsotopeCriteria
 

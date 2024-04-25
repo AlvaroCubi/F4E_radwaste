@@ -8,8 +8,8 @@ import numpy as np
 import pandas as pd
 
 from f4e_radwaste.constants import (
-    CoordinateType,
     KEY_MASS_GRAMS,
+    CoordinateType,
 )
 from f4e_radwaste.data_formats.data_mesh_info import DataMeshInfo
 from f4e_radwaste.readers.mesh_info_file import read_file

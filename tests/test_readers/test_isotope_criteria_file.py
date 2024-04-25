@@ -6,10 +6,10 @@ import numpy as np
 import pandas as pd
 
 from f4e_radwaste.constants import (
-    KEY_HALF_LIFE,
-    KEY_LDF_DECLARATION,
-    KEY_ISOTOPE,
     KEY_CSA_DECLARATION,
+    KEY_HALF_LIFE,
+    KEY_ISOTOPE,
+    KEY_LDF_DECLARATION,
     KEY_LMA,
     KEY_TFA_CLASS,
     KEY_TFA_DECLARATION,
