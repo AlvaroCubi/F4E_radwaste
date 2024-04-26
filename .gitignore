@@ -9,3 +9,4 @@ test_1d_benchmark
 build
 *egg-info
 __pycache__
+.vscode

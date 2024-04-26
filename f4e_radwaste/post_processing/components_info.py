@@ -1,4 +1,4 @@
-from typing import List
+from typing import List, Tuple
 
 from f4e_radwaste.data_formats.data_mass import DataMass
 from f4e_radwaste.post_processing.calculate_dose_rates import DoseCalculator
@@ -19,7 +19,7 @@ class ComponentsInfo:
             material_id_proportions=mat_id_proportions
         )
 
-    def get_components(self) -> List[List]:
+    def get_components(self) -> List[Tuple]:
         return list(zip(self.names, self.cell_ids))
 
     def get_all_cell_ids(self) -> List[int]:

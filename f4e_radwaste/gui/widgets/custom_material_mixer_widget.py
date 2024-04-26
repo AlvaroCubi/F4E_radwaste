@@ -53,7 +53,6 @@ class CustomMaterialMixer(QtWidgets.QWidget):
         layout_general.addWidget(self.scroll)
         self.setLayout(layout_general)
         self.setWindowTitle("Custom material mixer")
-        return
 
     def searchbar_text_changed(self, text):
         self.update_display(text=text)
@@ -76,11 +75,10 @@ class CustomMaterialMixer(QtWidgets.QWidget):
                         check_material.hide()
                 else:
                     check_material.show()
-        return
 
     def update_list_of_materials(self, new_material_names):
         # update completer
-        self.completer.model().setStringList(new_material_names)
+        self.completer.model().setStringList(new_material_names)  # type: ignore
         # update CheckMaterials
         self.material_names = new_material_names
         self.check_material_instances = []
@@ -99,7 +97,6 @@ class CustomMaterialMixer(QtWidgets.QWidget):
         self.widget_materials = QtWidgets.QWidget()
         self.widget_materials.setLayout(layout)
         self.scroll.setWidget(self.widget_materials)
-        return
 
     def get_custom_material_list(self) -> list[int]:
         custom_material_list = []
@@ -128,7 +125,6 @@ class CheckMaterial(QtWidgets.QWidget):
         layout.addWidget(self.button_off)
         self.setLayout(layout)
         self.update_button_state()
-        return
 
     def off(self):
         self.is_on = False

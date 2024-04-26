@@ -81,5 +81,5 @@ class MainWindowGUI(MainWindow):
 
         # Exit
         # noinspection PyTypeChecker
-        exit_button = main_menu.addAction("Exit", self.close)
+        exit_button = main_menu.addAction("Exit", self.close)  # type: ignore
         exit_button.setShortcut("q")

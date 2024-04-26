@@ -41,7 +41,7 @@ class DataMass(DataFrameValidator):
         )
         cells = filtered_dataframe.index.unique(level=KEY_CELL).values
         voxel_masses = filtered_dataframe[KEY_MASS_GRAMS].groupby(KEY_VOXEL).sum()
-        return list(cells), voxel_masses
+        return list(cells), voxel_masses  # type: ignore
 
     def get_mass_from_cells(self, cell_ids: List[int]) -> float:
         filtered_dataframe = self.get_filtered_dataframe(cells=cell_ids)

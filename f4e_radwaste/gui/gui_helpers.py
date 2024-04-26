@@ -16,18 +16,18 @@ OVERLAID_BOX_MESH_PLOTTER_NAME = "overlaid_box"
 GEOMETRY_MESH_PLOTTER_NAME = "geometry_mesh"
 COLOR_MAP = "jet"
 NUMBER_OF_COLORS = 10
-SCALAR_BAR_ARGS = dict(
-    interactive=True,  # Log bar for plots
-    title_font_size=18,
-    label_font_size=18,
-    shadow=True,
-    n_labels=NUMBER_OF_COLORS + 1,  # Because n_colors of the plot is 10
+SCALAR_BAR_ARGS = {
+    "interactive": True,  # Log bar for plots
+    "title_font_size": 18,
+    "label_font_size": 18,
+    "shadow": True,
+    "n_labels": NUMBER_OF_COLORS + 1,  # Because n_colors of the plot is 10
     # to solve a weird bug where the scalar bar shows some colors repeated
-    n_colors=100,
-    italic=True,
-    fmt="%.e",
-    font_family="arial",
-)
+    "n_colors": 100,
+    "italic": True,
+    "fmt": "%.e",
+    "font_family": "arial",
+}
 
 
 def add_push_button(message, layout, function):
@@ -43,7 +43,7 @@ def add_push_button(message, layout, function):
 def add_centered_text(layout, message):
     label = QtWidgets.QLabel(message)
     # noinspection PyUnresolvedReferences
-    label.setAlignment(QtCore.Qt.AlignCenter)
+    label.setAlignment(QtCore.Qt.AlignCenter)  # type: ignore
     if isinstance(layout, QtWidgets.QFormLayout):
         layout.addRow(label)
     else:

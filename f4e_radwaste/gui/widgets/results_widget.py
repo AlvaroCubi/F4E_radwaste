@@ -52,7 +52,7 @@ class PlottingOptionsSummary:
     sample_mesh_data_over_geometry: bool
     log_scale: bool
     min_scalar_val: float
-    max_scalar_val: bool
+    max_scalar_val: float
 
 
 class PlottingOptions:
@@ -175,7 +175,7 @@ class ResultsWidget(QtWidgets.QWidget):
     def get_decay_time(self):
         return self.mesh_selection.time_combo_box.currentText()
 
-    def get_materials(self) -> list[int]:
+    def get_materials(self) -> list[int] | None:
         material_str = self.mesh_selection.material_combo_box.currentText()
         # all the material keys are convertible to int except KEY_ALL_MATERIALS and
         # KEY_CUSTOM_MATERIAL which will remain a str

@@ -25,9 +25,8 @@ class DataMeshInfo:
         if self.coordinates == CoordinateType.CYLINDRICAL:
             if any(param is None for param in [self.origin, self.axis, self.vec]):
                 raise TypeError("Cylindrical mesh should have origin, axis, and vec!")
-        else:
-            if any(param is not None for param in [self.origin, self.axis, self.vec]):
-                raise TypeError("Cartesian mesh should NOT have origin, axis, and vec!")
+        elif any(param is not None for param in [self.origin, self.axis, self.vec]):
+            raise TypeError("Cartesian mesh should NOT have origin, axis, and vec!")
 
     def save(self, folder_path: Path):
         json_data = {
@@ -50,7 +49,7 @@ class DataMeshInfo:
     @classmethod
     def load(cls, folder_path: Path):
         data_mass = DataMass.load(folder_path)
-        with open(folder_path / "DataMeshInfo.json", "r") as infile:
+        with open(folder_path / "DataMeshInfo.json") as infile:
             json_data = json.load(infile)
         coordinates = CoordinateType(json_data["coordinates"])
         if coordinates == CoordinateType.CARTESIAN:

@@ -48,6 +48,6 @@ class DataAbsoluteActivity(DataFrameValidator):
 
     @decay_times.setter
     def decay_times(self, decay_time_names):
-        self._dataframe.index = self._dataframe.index.set_levels(
+        self._dataframe.index = self._dataframe.index.set_levels(  # type: ignore
             decay_time_names, level=KEY_TIME
         )

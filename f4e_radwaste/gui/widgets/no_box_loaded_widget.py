@@ -21,7 +21,7 @@ def no_box_loaded_widget(manager):
         layout=widget.layout(),
         function=manager.functions.button_pressed_load_stl_box,
     )
-    # noinspection PyUnresolvedReferences
-    widget.layout().addStretch()  # so the buttons are stacked at the top
+    # stack buttons at the top
+    widget.layout().addStretch()  # type: ignore  
     widget.setVisible(False)
     return widget

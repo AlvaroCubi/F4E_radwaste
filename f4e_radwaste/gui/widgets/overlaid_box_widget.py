@@ -92,6 +92,7 @@ class OverlaidBoxWidget(QtWidgets.QWidget):
                 origin[2] + size[2],
             )
         )
+        assert self.box_grid is not None
         self.box_grid.rotate_x(rotation[0], inplace=True)
         self.box_grid.rotate_y(rotation[1], inplace=True)
         self.box_grid.rotate_z(rotation[2], inplace=True)
